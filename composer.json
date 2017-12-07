@@ -1,0 +1,18 @@
+{
+    "name": "mwsimple/scdatetimepicker-bundle",
+    "description": "Symfony bundle for Bootstrap DateTime picker",
+    "keywords": ["symfony", "bootstrap", "bundle", "picker", "datepicker", "timepicker"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stephane Collot"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "~2.8 || ~3.0"
+    },
+    "autoload": {
+        "psr-4": { "SC\\DatetimepickerBundle\\": "" }
+    }
+}
