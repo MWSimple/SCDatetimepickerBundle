@@ -11,7 +11,7 @@ Please feel free to contribute, to fork, to send merge request and to create tic
 ### Step 1: Install DatetimepickerBundle
 
 ```bash
-php composer.phar require mwsimple/datetimepicker-bundle
+php composer.phar require mwsimple/scdatetimepicker-bundle
 ```
 
 ### Step 2: Enable the bundle
