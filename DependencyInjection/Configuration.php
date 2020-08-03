@@ -16,8 +16,14 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('stephane_collot_datetimepicker');
+        $treeBuilder = new TreeBuilder('stephane_collot_datetimepicker');
+        // Symfony/config > 4.1||5.*
+		if (\method_exists($treeBuilder, 'getRootNode')) {
+			$rootNode = $treeBuilder->getRootNode();
+		} else {
+			// symfony/config <= 4.1
+			$rootNode = $treeBuilder->root('stephane_collot_datetimepicker');
+		}
 
         $this->addPicker($rootNode);
 
