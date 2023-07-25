@@ -1,5 +1,5 @@
 {
-    "name": "mwsimple/scdatetimepicker-bundle",
+    "name": "joesenova/scdatetimepicker-bundle",
     "description": "Symfony bundle for Bootstrap DateTime picker",
     "keywords": ["symfony", "bootstrap", "bundle", "picker", "datepicker", "timepicker"],
     "type": "symfony-bundle",
@@ -7,6 +7,11 @@
     "authors": [
         {
             "name": "Stephane Collot"
+        },
+        {
+            "name": "Johan Kasselman",
+            "email": "johankasselman@live.com",
+            "role": "Developer"
         }
     ],
     "autoload": {
