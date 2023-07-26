@@ -39,7 +39,7 @@ class FormExtension extends AbstractExtension
     /**
      * {@inheritdoc}
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return array(
             new TwigFunction('form_javascript', array($this, 'renderJavascript'), array('is_safe' => array('html'))),
@@ -55,7 +55,7 @@ class FormExtension extends AbstractExtension
      *
      * @return string
      */
-    public function renderJavascript(FormView $view, $prototype = false)
+    public function renderJavascript(FormView $view, $prototype = false): string
     {
         $block = $prototype ? 'javascript_prototype' : 'javascript';
 
@@ -65,7 +65,7 @@ class FormExtension extends AbstractExtension
     /**
      * {@inheritdoc}
      */
-    public function getName()
+    public function getName(): string
     {
         return 'collot.twig.extension.form';
     }
