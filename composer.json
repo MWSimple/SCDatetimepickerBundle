@@ -1,5 +1,5 @@
 {
-    "name": "joesenova/scdatetimepicker-bundle",
+    "name": "mwsimple/scdatetimepicker-bundle",
     "description": "Symfony bundle for Bootstrap DateTime picker - Twigv3",
     "keywords": ["symfony", "bootstrap", "bundle", "picker", "datepicker", "timepicker"],
     "type": "symfony-bundle",
