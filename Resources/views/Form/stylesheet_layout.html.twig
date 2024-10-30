@@ -1,9 +1,7 @@
 {% block form_stylesheet %}
-{% apply spaceless %}
-    {% for child in form %}
+    {%- for child in form -%}
         {{ form_stylesheet(child) }}
-    {% endfor %}
-{% endapply %}
+    {%- endfor -%}
 {% endblock form_stylesheet %}
 
 {% block field_stylesheet "" %}
@@ -11,8 +9,6 @@
 {% block button_stylesheet "" %}
 
 
-{% block collot_datetime_stylesheet %}
-{% apply spaceless %}
+{%- block collot_datetime_stylesheet -%}
     <link href="{{ asset('bundles/scdatetimepicker/css/datetimepicker.css') }}" rel="stylesheet" media="screen">
-{% endapply %}
-{% endblock collot_datetime_stylesheet %}
+{%- endblock collot_datetime_stylesheet -%}
