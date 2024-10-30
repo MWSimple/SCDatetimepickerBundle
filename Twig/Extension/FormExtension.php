@@ -27,9 +27,9 @@ class FormExtension extends AbstractExtension
      * This property is public so that it can be accessed directly from compiled
      * templates without having to call a getter, which slightly decreases performance.
      *
-     * @var \Symfony\Component\Form\FormRenderer
+     * @var FormRenderer
      */
-    public $renderer;
+    public FormRenderer $renderer;
 
     public function __construct(FormRenderer $renderer)
     {
@@ -55,7 +55,7 @@ class FormExtension extends AbstractExtension
      *
      * @return string
      */
-    public function renderJavascript(FormView $view, $prototype = false): string
+    public function renderJavascript(FormView $view, bool $prototype = false): string
     {
         $block = $prototype ? 'javascript_prototype' : 'javascript';
 
@@ -63,7 +63,7 @@ class FormExtension extends AbstractExtension
     }
 
     /**
-     * {@inheritdoc}
+     * @return string
      */
     public function getName(): string
     {

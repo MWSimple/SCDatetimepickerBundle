@@ -6,6 +6,7 @@
 /vendor
 /nbproject
 /Resources/doc/generated
+/.idea
 
 *.tmp
 *.patch
